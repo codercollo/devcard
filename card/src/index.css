@@ -9,6 +9,9 @@
 body {
   font-family: "IBM Plex Mono", sans-serif;
   background-color: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
@@ -17,8 +20,10 @@ h1 {
 
 .card {
   width: 450px;
+  height: 50%;
   margin: 40px;
   border: 4px solid #222;
+  box-shadow: 0 8px 16px  8px rgba(0, 0, 0, 0.2);
 }
 
 .card::after {
@@ -30,6 +35,7 @@ h1 {
   width: 100%;
   display: block;
   object-fit: cover;
+  border: 4px solid black;
 }
 
 .data {
@@ -45,6 +51,7 @@ h1 {
   margin-top: 16px;
 }
 
+
 .skill {
   padding: 2px 12px;
   border-radius: 5px;
@@ -52,4 +59,10 @@ h1 {
   align-items: center;
   gap: 8px;
   font-weight: 500;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transition: all ease-in-out 0.1s;
+}
+.skill:hover{
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
